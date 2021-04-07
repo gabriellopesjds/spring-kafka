@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: http://localhost:9092
+    consumer:
+      bootstrap-servers: http://localhost:9092
+      group-id: group-id
+      auto-offset-reset: earliest
+
+kafka:
+  queues:
+    product:
+      name: KAFKA-PRODUCT
+      read:
+        listener-bean-id: processingMessageReadingFromProductQueues
