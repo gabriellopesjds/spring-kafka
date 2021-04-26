@@ -6,6 +6,11 @@ spring:
       bootstrap-servers: http://localhost:9092
       group-id: group-id
       auto-offset-reset: earliest
+  data:
+    mongodb:
+      uri: mongodb://localhost/kafka
+      username: root
+      password: root
 
 kafka:
   queues:

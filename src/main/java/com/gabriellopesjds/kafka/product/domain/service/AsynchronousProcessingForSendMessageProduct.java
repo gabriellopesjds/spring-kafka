@@ -23,8 +23,9 @@ public class AsynchronousProcessingForSendMessageProduct extends AsynchronousPro
     @Override
     public Object buildMessage(Product messageObject) {
         return ProductResponseDTO.builder()
-            .id(messageObject.getId())
+            .code(messageObject.getCode())
             .name(messageObject.getName())
+            .saleValue(messageObject.getSaleValue())
             .build();
     }
 
